@@ -233,7 +233,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 break; // Arrete le compte si le pion d'un joueur différent est rencontré
             }
         }
-        return count;
+        return (count - 1);
     }
     
     function countAlignedPionsInCol(row, col) {
@@ -252,7 +252,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 break; // Arrete le compte si le pion d'un joueur différent est rencontré
             }
         }
-        return count;
+        return (count - 1);
     }
     
     function countAlignedPionsInDiagonal(row, col) {
